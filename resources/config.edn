@@ -1,0 +1,11 @@
+{:port 3000
+ :jdbc-url #profile {:dev "jdbc:postgresql://localhost/webapp-dev"}
+ :mailgun {:send-email #profile {:dev false
+                                 :test false}
+           :api-key #profile {:dev "PLACEHOLDER"
+                              :test "testing"}
+           :domain #profile {:dev "webapp.localhost"
+                             :test "testing"}
+           :from #profile {:dev "noreply@webapp.localhost"
+                           :test "testing"}
+           :url #profile {:dev "webapp.localhost"}}}
